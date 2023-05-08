@@ -1,0 +1,231 @@
+/*===============================Geral===============================*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+   box-sizing: border-box; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #B2BEBF;
+  color:#3B3936;
+}
+/*===============================Logo e menu===============================*/
+.menu {
+  background-color: #486966;
+  display: flex;
+  justify-content: center;
+  clear: right;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) ;
+  margin: 0 30px;
+}
+
+.menu a {
+  padding: 14px;
+  text-decoration:none;
+  color:#3B3936 ;
+  transition: background-color .5s ;
+}
+
+.menu a:hover{
+  background-color:#3B3936;
+  color:  #fdfdfd ;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+/*===============================inicio===============================*/
+.coluna-esquerda {
+  width: 55%;
+  float: left;
+  text-align:center;
+}
+.coluna-esquerda img {
+  height:130px;
+  width: auto;
+  border-radius:10px;
+}
+
+.doacoes {
+  padding: 10px;
+  border-radius: 10px;
+  transition: box-shadow .5s;
+}
+
+.doacoes:hover {
+  box-shadow: 5px 10px 15px #88888888 ;
+}
+
+.coluna-direita {
+  width:45%;
+  float:right;
+  padding-left:20px;
+  text-align:center;
+}
+
+.coluna-direita img {
+  width: 400px;
+  height:auto;
+  border-radius:10px;
+}
+
+.cardp {
+  background-color:#fdfdfd;
+  padding: 20px;
+  margin: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+}
+
+/*===============================Redes sociais===============================*/
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+}
+
+.social img {
+  opacity: 0.6;
+  margin: 5px;
+  transition: opacity .5s;
+  width: 50%;
+  height: auto;
+}
+
+.social img:hover {
+  opacity: 0.9;
+}
+
+footer{
+  position: fixed;
+  bottom:5px;
+  right:0;
+}
+/*===============================Eventos===============================*/
+.eventos {
+  display: grid;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  background-color: #fdfdfd;
+  margin: 10px 0;
+  padding: 15px 0;
+  border-radius: 15px;
+}
+
+.eventos h4 {
+  margin-bottom:0;
+}
+
+.eventos img {
+  width: 400px;
+  height: auto;
+  border-radius: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*===============================Para adoção===============================*/
+.card {
+  background-color:#889C9B;
+  padding: 20px;
+  margin: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  overflow: hidden
+}
+
+.bichinhos {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.bichinhos:hover {
+  box-shadow: 5px 10px 15px #88888888 ;
+  background-color: #a8c2c0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
+  grid-gap: 16px;
+}
+
+.bichinhos img {
+  border-radius: 35%;
+  height: 250px;
+  width: 250px;
+  border: 4px black;
+}
+/*===============================Depoimentos===============================*/
+.depoimentos {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all .5s;
+  background-color: #fdfdfd;
+}
+
+.depoimentos img {
+  border-radius: 10px;
+  height: 250px;
+  border: 4px black;
+}
+/*===============================SobreNos===============================*/
+#logoS {
+  width: 400px;
+  height: auto;
+  border-radius: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#fundoS {
+  background-color: #fdfdfd;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align:center;
+}
+/*Outros*/
+
+@media screen and (max-width:820px) {
+  .coluna-esquerda{
+    width: 100%;
+  }
+
+  .coluna-direita{
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:475px) {
+
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  .menu, .menu a {
+    display: block;
+    width: 100%;
+    margin-right: 20px;
+  }
+      .coluna-esquerda{
+    width: 100%;
+  }
+
+  .coluna-direita{
+    width: 100%;
+    padding: 0;
+  }
+}
